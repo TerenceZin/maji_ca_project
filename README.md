@@ -441,6 +441,6 @@ Connues et assumées :
 
 ## Licence
 
-Propriétaire — © Maji. Tous droits réservés.
+Propriétaire — © Terence Tresch. Tous droits réservés.
 
 Ce repository est publié à des fins de revue d'ingénierie. Toute réutilisation, redistribution ou modification est soumise à autorisation préalable.

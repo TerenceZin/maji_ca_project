@@ -1,0 +1,138 @@
+# =============================================================
+# Environnement — NE JAMAIS COMMITTER
+# =============================================================
+.env
+.env.local
+.env.*.local
+.env.production
+.env.prod
+# Les fichiers d'exemple sont au contraire conservés :
+!.env.example
+!.env.prod.example
+
+# =============================================================
+# Python (backend)
+# =============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.eggs/
+.installed.cfg
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+
+# Tests / linters / type-checking
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+
+# =============================================================
+# Node.js (frontend)
+# =============================================================
+node_modules/
+.pnp
+.pnp.js
+
+# Builds
+dist/
+dist-ssr/
+build/
+.vite/
+.parcel-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =============================================================
+# TypeScript
+# =============================================================
+*.tsbuildinfo
+tsc-out.txt
+
+# =============================================================
+# IDE / éditeurs
+# =============================================================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# =============================================================
+# Système d'exploitation
+# =============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# =============================================================
+# Docker
+# =============================================================
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# =============================================================
+# Logs et fichiers temporaires
+# =============================================================
+*.log
+logs/
+*.tmp
+*.bak
+*.swp
+
+# =============================================================
+# Uploads / fichiers métier (si stockés en local)
+# =============================================================
+backend/uploads/
+backend/storage/
+backend/plan_files/
+
+# =============================================================
+# Bases de données locales
+# =============================================================
+*.db
+*.sqlite
+*.sqlite3
+
+# =============================================================
+# Secrets / certificats
+# =============================================================
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+
+# =============================================================
+# Sorties de build / artefacts
+# =============================================================
+*.tar.gz
+*.zip

@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  .font-brand {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Handsontable overrides */
+.handsontable td.price-locked {
+  background-color: #f3f4f6 !important;
+  color: #9ca3af !important;
+  cursor: not-allowed;
+}
+.handsontable td.price-warning-orange {
+  background-color: #fff7ed !important;
+}
+.handsontable td.price-warning-red {
+  background-color: #fef2f2 !important;
+}
+
+/* Button utilities */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center bg-maji-600 hover:bg-maji-700 disabled:opacity-50 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-colors cursor-pointer;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center bg-white hover:bg-gray-50 border border-gray-200 text-gray-700 px-3 py-1.5 rounded-lg text-sm font-medium transition-colors cursor-pointer;
+  }
+}
+
+/* Sticky summary bar */
+.summary-bar {
+  position: sticky;
+  bottom: 0;
+  z-index: 40;
+}
+
+/* Sidebar scroll */
+.sidebar-scroll {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
